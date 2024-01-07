@@ -1,11 +1,12 @@
 Terraform Module
 ============
-This repository serves as a terraform template for proxmox module development.
+Terraform module to orchestrating Proxmox VM resources. 
 
 ## 🪜 Repository Structure
 > [utilizable/github-actions-semver-tagging](https://github.com/utilizable/github-actions-semver-tagging)
 >> [utilizable/terraform-module](https://github.com/utilizable/terraform-module)
 >>> [utilizable/terraform-module-proxmox](https://github.com/utilizable/terraform-module-proxmox)
+>>>> [utilizable/terraform-module-proxmox-vm](https://github.com/utilizable/terraform-module-proxmox-vm)
 
 ## Table of Contents
 - [Requirements](#-requirements)
@@ -39,7 +40,19 @@ Module is based on [example](https://registry.terraform.io/providers/) provider.
 #### Input Variables
 ```tf
 # ./terraform/main.tf
-...
+  name            = "example"
+  node_name       = "pve"
+  vm_id           = "100"
+  description     = ""
+  tags            = ["terraform"]
+  stop_on_destroy = true
+
+  cdrom = [
+    {
+      enabled = "true"
+      file_id = "https://mirror.accum.se/debian-cd/current/amd64/iso-cd/debian-12.4.0-amd64-netinst.iso"
+    }
+  ]
 ```
 #### Environment Requirements
 ```ini
