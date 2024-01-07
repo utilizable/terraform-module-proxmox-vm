@@ -1,0 +1,5 @@
+# outputs.tf
+
+# VARIABLES - OUTPUT
+# ------------------
+
