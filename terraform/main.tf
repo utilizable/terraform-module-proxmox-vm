@@ -4,9 +4,8 @@ module "main" {
   // source module
   source = "./modules/base"
 
-  // pass provider variables to module  - proxmox
   providers = {
-    proxmox = pve
+    proxmox = proxmox.pve
   }
 
   // pass variables to module

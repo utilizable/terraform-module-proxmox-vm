@@ -1,5 +1,38 @@
 # main.tf
 
+#provider "proxmox" {
+#  alias    = "pve"
+#  username = var.provider_proxmox_username
+#  password = var.provider_proxmox_password
+#  endpoint = var.provider_proxmox_endpoint
+#  insecure = true
+#  ssh {
+#    agent = true
+#  }
+#}
+
+#provider "proxmox" {
+#  alias  = "module_provider"
+#  # Use the provided proxmox provider configuration
+#  username = var.proxmox_provider["username"]
+#  password = var.proxmox_provider["password"]
+#  endpoint = var.proxmox_provider["endpoint"]
+#
+#  insecure = true
+#  ssh {
+#    agent = true
+#  }
+#}
+
+terraform {
+  required_providers {
+    proxmox = {
+      source = "bpg/proxmox"
+      version = "0.43.0"
+    }
+  }
+}
+
 resource "proxmox_virtual_environment_vm" "resource_vm" {
 
   // required
