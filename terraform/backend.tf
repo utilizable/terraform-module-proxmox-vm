@@ -6,4 +6,9 @@ terraform {
     force_path_style = true
     skip_requesting_account_id = true
   }
+  required_providers {
+    proxmox = {
+      source = "bpg/proxmox"
+    }
+  }
 }
