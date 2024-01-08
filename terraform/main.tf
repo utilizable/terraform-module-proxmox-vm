@@ -1,12 +1,8 @@
-# main.tf
+# ./main.tf
 
 module "main" {
   // source module
   source = "./modules/base"
-
-  providers = {
-    proxmox = proxmox.pve
-  }
 
   // pass variables to module
   name            = "example"

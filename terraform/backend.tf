@@ -1,3 +1,5 @@
+# ./backend.tf
+
 terraform {
   backend "s3" {
     skip_credentials_validation = true
@@ -9,7 +11,6 @@ terraform {
   required_providers {
     proxmox = {
       source = "bpg/proxmox"
-      version = "0.43.0"
     }
   }
 }

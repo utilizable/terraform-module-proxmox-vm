@@ -1,4 +1,4 @@
-# outputs.tf
+# ./outputs.tf
 
 # VARIABLES - OUTPUT
 # ------------------
