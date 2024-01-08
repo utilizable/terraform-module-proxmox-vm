@@ -1,6 +1,6 @@
 # ./modules/../backend.tf
 
-# CONFIGURATION - BACKEND 
+# MODULE - BACKEND 
 # ------------------
 
 terraform {

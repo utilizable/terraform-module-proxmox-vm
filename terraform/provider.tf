@@ -1,6 +1,6 @@
 # ./provider.tf
 
-# CONFIGURATION - PROVIDERS
+# ROOT - PROVIDERS
 # ------------------
 
 provider "proxmox" {

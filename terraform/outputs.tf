@@ -1,5 +1,5 @@
 # ./outputs.tf
 
-# VARIABLES - OUTPUT
+# ROOT - OUTPUTS
 # ------------------
 

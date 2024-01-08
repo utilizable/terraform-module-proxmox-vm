@@ -1,6 +1,6 @@
 # ./main.tf
 
-# MODULE - "proxmox-vm" 
+# ROOT - MODULES
 # ------------------
 
 module "proxmox-vm" {

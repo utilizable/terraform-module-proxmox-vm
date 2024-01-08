@@ -1,5 +1,8 @@
 # ./modules/../main.tf
 
+# MODULE - RESOURCES 
+# ------------------
+
 resource "proxmox_virtual_environment_vm" "resource_vm" {
 
   // required

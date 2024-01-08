@@ -1,6 +1,6 @@
 # ./backend.tf
 
-# CONFIGURATION - BACKEND 
+# ROOT - BACKEND 
 # ------------------
 
 terraform {

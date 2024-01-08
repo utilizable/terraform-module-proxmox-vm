@@ -1,6 +1,6 @@
 # ./modules/../variables.tf
 
-# MODULE VARIABLES
+# MODULE - VARIABLES
 # ------------------
 
 variable "vm_id" {

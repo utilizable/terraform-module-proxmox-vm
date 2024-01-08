@@ -1,6 +1,6 @@
 # ./variables.tf
 
-# PROVIDER VARIABLES
+# ROOT - VARIABLES
 # ------------------
 
 variable "provider_proxmox_username" {
