@@ -2,12 +2,12 @@
 
 module "main" {
   // source module
-  source = "./modules/base" 
+  source = "./modules/base"
 
   // pass provider variables to module  - proxmox
-	providers = {
-		proxmox = pve 
-	}
+  providers = {
+    proxmox = pve
+  }
 
   // pass variables to module
   name            = "example"
