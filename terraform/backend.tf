@@ -1,6 +1,11 @@
 # ./backend.tf
 
+# CONFIGURATION - BACKEND 
+# ------------------
+
 terraform {
+
+	# configuration - backend
   backend "s3" {
     skip_credentials_validation = true
     skip_metadata_api_check = true
@@ -8,9 +13,12 @@ terraform {
     force_path_style = true
     skip_requesting_account_id = true
   }
+
+	# configuration - providers
   required_providers {
     proxmox = {
       source = "bpg/proxmox"
     }
   }
+
 }

@@ -17,4 +17,3 @@ variable "provider_proxmox_endpoint" {
   type        = string
   description = "Proxmox endpoint."
 }
-

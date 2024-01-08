@@ -1,6 +1,9 @@
 # ./main.tf
 
-module "main" {
+# MODULE - "proxmox-vm" 
+# ------------------
+
+module "proxmox-vm" {
   // source module
   source = "./modules/base"
 
